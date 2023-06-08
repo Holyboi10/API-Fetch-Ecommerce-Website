@@ -1,38 +1,194 @@
+body{
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+  background-image: conic-gradient(from -90deg at top left, black, white);
+}
 .App {
   text-align: center;
 }
+.main-container{
+  /* border: 1px solid red; */
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 200vh;
+}
+.item-container{
+  /* border: 1px solid blue; */
+  height: 95%;
+  background-color: whitesmoke;
+  border-bottom: 20px;
+  width: 95%;
+  margin-bottom: 10px;
+  margin: auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.p-two{
+  font-size: 11px;
+  font-weight: 500;
+  
+}
+.p-one{
+  font-size: 14px;
+  color: brown;
+  padding: 6px;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h-four{
+  color: grey;
+  font-size: 12px;
+  font-weight: 300;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn{
+  background-color: black;
   color: white;
+  height: 30px;
+  width: 120px;
+}
+.images{
+  width: 90px;
+  height: 70px;
+}
+.images:hover{
+  transform: scale(1.1);
+}
+.Navbar{
+  /* border: 1px solid red; */
+  height: 8vh;
+  background-color: whitesmoke;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.Nav-content{
+  /* border: 1px solid green; */
+  width: 90%;
+  margin: auto;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: brown;
+}
+.Nav-content ol{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.Nav-content select{
+  width: 70px;
+  height: 30px;
+  background-color: inherit;
+  border: none;
+  font-weight: 400;
+  font-size: 17px;
+  color: brown;
+}
+.Nav-content h3{
+  color: black;
+  font-weight: 500;
+  font-size: 23px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section{
+  border: 1px solid gray;
+  height: 140vh;
+  background-image: url(https://insideoutstyleblog.com/wp-content/uploads/2016/06/shopping-tips.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.hero{
+  /* border: 1px solid green; */
+  width: 50%;
+  margin-left: 700px;
+  margin-top: 150px;
+  height: 50vh;
+  text-align: start;
+  padding: 20px;
+  
+}
+.hero button{
+  width: 200px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  border: none;
+}
+.hero p{
+
+  font-size: 18px;
+  /* color: rgb(57, 56, 56); */
+  color: brown;
+  font-weight: 300;
+}
+.hero h2{
+  font-weight: 300;
+  font-size: 65px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-device-width: 360px) and (max-device-width: 798px){
+  .main-container{
+    /* width: 90vw; */
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 95vw;
+    border: 1px solid red;
+    height: 300vh;
+
   }
-  to {
-    transform: rotate(360deg);
+  .item-container{
+    height: 98%;
+    margin: auto;
+    width: 97%;
+    
+  
   }
+  .p-one{
+    font-size: 12px;
+
+  }
+  .Navbar{
+    width: 100vw;
+    height: 6vh;
+  }
+  .h-five{
+
+    font-size: 9px;
+  }
+  .h-four{
+    
+    font-size: 10px;
+  }
+  .hero-section{
+    height: 100vh;
+  }
+  .Nav-content p{
+    display: none;
+  }
+  .Nav-content ol{
+    width: 50%;
+  }
+  .Nav-content select{
+    font-size: 14px;
+  }
+  .hero{
+    /* margin-top: 200px; */
+    padding-top: 200px;
+    width: 60%;
+    margin: 0;
+    /* border: 1px solid red; */
+  }
+  .hero h2{
+    font-size: 30px;
+  }
+  .hero button{
+    width: 150px;
+  }
+
 }
