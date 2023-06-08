@@ -5,7 +5,7 @@ export default function Footer() {
     <div className='footer'>
         <div className='footer-a'>
             <div>
-                <p>SHOP</p>
+                <p className='p-black'> SHOP</p>
                 <p>Cloths</p>
                 <p>Electronics</p>
                 <p>Jewlry</p>
@@ -13,14 +13,14 @@ export default function Footer() {
 
             </div>
             <div>
-            <p>HELP</p>
+            <p className='p-black'>HELP</p>
                 <p>FAQ</p>
                 <p>Contact Us</p>
                 <p>Accessibility</p>
 
             </div>
             <div>
-            <p>ABOUT</p>
+            <p className='p-black'>ABOUT</p>
                 <p>Our Story</p>
                 <p>Wholesale</p>
                 <p>Press</p>
@@ -31,7 +31,7 @@ export default function Footer() {
 
         </div>
         <div className='footer-b'> <br/>
-            <p>Sign up to get 10% off on your first order</p>
+            <p className='p-black'>Sign up to get 10% off on your first order</p>
             <input typeof='search' placeholder='Your email address'></input>
             <button>Subscribe</button>
             <div className='term'>

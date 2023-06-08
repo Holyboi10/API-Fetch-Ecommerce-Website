@@ -46,6 +46,9 @@ body{
   color: white;
   height: 30px;
   width: 120px;
+  border-radius: 30px;
+  border: none;
+  background-image: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
 }
 .images{
   width: 90px;
@@ -53,6 +56,11 @@ body{
 }
 .images:hover{
   transform: scale(1.1);
+}
+.p-black{
+  color: black;
+  font-weight: 500;
+  
 }
 .Navbar{
   /* border: 1px solid red; */
@@ -89,7 +97,7 @@ body{
   font-weight: 400;
   font-size: 17px;
   /* color: #c71585; */
-  color: black;
+  color: #e6390a;
 }
 .Nav-content h3{
   color: black;
@@ -253,7 +261,7 @@ body{
   }
   .footer{
     flex-direction: column;
-    height: 70vh;
+    height: 65vh;
     font-size: 10px;
   }
   .footer-a{
@@ -271,7 +279,12 @@ body{
     width: 200px;
   }
   .icons{
-    margin-top: 0
+    /* margin-top: 0; */
+    width: 40vw;
+
+  }
+  .term{
+    width: 60vw;
   }
 
 }
