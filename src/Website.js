@@ -16,7 +16,6 @@ const Website = () => {
             return <div className='item-container'> <br/>
                 <img className='images' src={image}/>
                 <p className='p-one'>{title}</p>
-                {/* <h5 className='h-five'>${price}</h5> */}
                 <h4 className='h-four'>{category}</h4>
                 <button className='btn'>${price}</button>
             </div>
